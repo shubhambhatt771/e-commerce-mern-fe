@@ -25,9 +25,9 @@ const Login = () => {
         name: user.displayName!,
         email: user.email!,
         photo: user.photoURL!,
-        gender,
+        gender : gender ?? 'male',
         role: "user",
-        dob: date,
+        dob: date ?? '02-05-1998',
         _id: user.uid,
       });
 
